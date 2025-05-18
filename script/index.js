@@ -83,3 +83,34 @@ escolhe.addEventListener("click", () => {
     res.textContent = "I É PRA ESCUTAR JOAO!"
     a.textContent = `Album escolhido para ser escutado: ${escolhido.nome}`
 })
+
+const salve =  localStorage.getItem("backgroundColor")
+if (salve) {
+   muda.style.backgroundColor = salve
+
+   if (salve === "darkgrey") {
+      dark.value = "Claro"
+      dark.style.backgroundColor = "lightgrey"
+   } else {
+      dark.value = "Escuro"
+      dark.style.backgroundColor = "darkgrey"
+   }
+}
+
+dark.addEventListener("click", () => {
+   const muda = document.getElementById("muda")
+   const dark = document.getElementById("dark")
+   const color = getComputedStyle(muda).backgroundColor
+
+   if (color === "rgb(211, 211, 211)") {
+      muda.style.backgroundColor = "darkgrey"
+      dark.style.backgroundColor = "lightgrey"
+      dark.value = "Claro"
+      localStorage.setItem("backgroundColor", "darkgrey")
+   } else {
+      muda.style.backgroundColor = "lightgrey"
+      dark.style.backgroundColor = "darkgrey"
+      dark.value = "Escuro"
+      localStorage.setItem("backgroundColor", "lightgrey")
+   }
+})

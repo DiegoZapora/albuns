@@ -8,7 +8,24 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightgray;
+    background-color: rgb(211, 211, 211);
+}
+
+#cabe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#dark {
+    width: 60px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: darkgray;
 }
 
 #container1 {
