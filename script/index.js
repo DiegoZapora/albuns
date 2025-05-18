@@ -2,6 +2,8 @@ const escolhe = document.getElementById("btn")
 const res = document.getElementById("res")
 const a = document.getElementById("a")
 const img = document.getElementById("img")
+const muda = document.getElementById("muda")
+const dark = document.getElementById("dark")
 
 let album = [
     {
@@ -98,8 +100,6 @@ if (salve) {
 }
 
 dark.addEventListener("click", () => {
-   const muda = document.getElementById("muda")
-   const dark = document.getElementById("dark")
    const color = getComputedStyle(muda).backgroundColor
 
    if (color === "rgb(211, 211, 211)") {
