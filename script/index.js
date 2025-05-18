@@ -11,5 +11,6 @@ escolhe.addEventListener("click", () => {
 
     img.src = escolhido
     img.style.display  = "block"
+    res.textContent = "I É PRA ESCUTAR JOAO!"
     a.textContent = "Escuta seu album legal ai dogão"
 })
