@@ -10,7 +10,6 @@ escolhe.addEventListener("click", () => {
     let escolhido = album[aleatorio]
 
     img.src = escolhido
-    img.style.display  = "block"
     res.textContent = "I É PRA ESCUTAR JOAO!"
     a.textContent = "Escuta seu album legal ai dogão"
 })
