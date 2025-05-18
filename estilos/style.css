@@ -14,14 +14,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    margin-top: 50px;
 }
 
 #container2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    
 }
 
 #container3 {
@@ -34,5 +34,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#btn {
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 1.2em;
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 50px;
 }
