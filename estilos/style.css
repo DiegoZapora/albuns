@@ -1,1 +1,38 @@
 @charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+#container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+#container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
